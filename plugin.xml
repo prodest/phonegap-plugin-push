@@ -60,8 +60,8 @@
     <framework src="push.gradle" custom="true" type="gradleReference"/>
     <framework src="com.android.support:support-v13:23+"/>
     <framework src="com.google.android.gms:play-services-gcm:9.0.2+"/>
-    <framework src="com.google.android.gms.location:play-services-gcm:9.0.2+"/>
-    <framework src="com.google.android.gms.maps.model:play-services-gcm:9.0.2+"/>
+    <framework src="com.google.android.gms:play-services-location:9.0.2+"/>
+    <framework src="com.google.android.gms:play-services-maps:9.0.2+"/>
     <framework src="me.leolin:ShortcutBadger:1.1.4@aar"/>
     <source-file src="src/android/com/adobe/phonegap/push/AppLocation.java" target-dir="src/com/adobe/phonegap/push/"/>
     <source-file src="src/android/com/adobe/phonegap/push/BackgroundActionButtonHandler.java" target-dir="src/com/adobe/phonegap/push/"/>
