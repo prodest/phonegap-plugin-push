@@ -116,13 +116,13 @@ public class GCMIntentService extends GcmListenerService implements PushConstant
     }
 
     private boolean ContainsLocation(Location currentLocation, AppLocation appLocation) {
-        if ( appLocation.equals(null) )
+        if ( appLocation == null || currentLocation == null )
             return false;
         
         LatLng currentPoint = new LatLng( currentLocation.getLatitude(), currentLocation.getLongitude());
-        if ( appLocation.type.equals("polygon") ) {
+        if ( appLocation.type.equals( LOCATION_POLYGON ) ) {
             return PolyUtil.containsLocation( currentPoint, appLocation.polygon, true );
-        } else if ( appLocation.type.equals("circle") ) {
+        } else if ( appLocation.type.equals( LOCATION_CIRCLE ) ) {
             return SphericalUtil.pointInCircle( currentPoint, appLocation.center, appLocation.radius );
         } else {
             return false;
