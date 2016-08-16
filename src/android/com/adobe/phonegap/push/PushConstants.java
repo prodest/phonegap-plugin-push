@@ -60,4 +60,16 @@ public interface PushConstants {
     public static final String CLEAR_ALL_NOTIFICATIONS = "clearAllNotifications";
     public static final String VISIBILITY = "visibility";
     public static final String INLINE_REPLY = "inlineReply";
+
+    public static final String LOCATION_AWARENESS = "locationAwareness";
+    public static final String LOCATION_OBJECT = "locationObject";
+    public static final String LOCATION_TYPE = "type";
+    public static final String LOCATION_CIRCLE = "circle";
+    public static final String LOCATION_POLYGON = "polygon";
+    public static final String LOCATION_LATITUDE = "lat";
+    public static final String LOCATION_LONGITUDE = "lon";
+    public static final String LOCATION_CENTER = "center";
+    public static final String LOCATION_RADIUS = "radius";
+
+
 }
